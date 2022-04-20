@@ -1,12 +1,16 @@
 {
 	"name": "CDCHealhData",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "api/views/bi63-dtpu/rows.csv?accessType=DOWNLOAD"
+				"type": "AzureBlobFSLocation",
+				"fileName": "api/views/bi63-dtpu/rows.csv?accessType=DOWNLOAD"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
