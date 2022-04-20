@@ -16,10 +16,6 @@
 				"userProperties": [],
 				"typeProperties": {
 					"notebookPath": "/bjdworkspace/flightdata"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricksConnection",
-					"type": "LinkedServiceReference"
 				}
 			}
 		],
