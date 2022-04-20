@@ -1,10 +1,6 @@
 {
 	"name": "CDCHealhData",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "NCHS Leading Causes of Death",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
