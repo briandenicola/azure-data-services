@@ -81,7 +81,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableLogging": true
+					"dataset": {
+						"referenceName": "CDCHealhData",
+						"type": "DatasetReference"
+					},
+					"enableLogging": false
 				}
 			}
 		],
