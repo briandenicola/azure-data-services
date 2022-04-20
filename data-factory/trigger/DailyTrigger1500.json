@@ -2,7 +2,7 @@
 	"name": "DailyTrigger1500",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -16,7 +16,7 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2019-07-17T15:00:00Z",
+				"startTime": "2025-01-01T15:00:00Z",
 				"timeZone": "UTC"
 			}
 		}
