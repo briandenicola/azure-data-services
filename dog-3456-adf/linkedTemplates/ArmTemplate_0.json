@@ -234,7 +234,13 @@
 								"type": "DatasetReference",
 								"parameters": {}
 							},
-							"enableLogging": false,
+							"logStorageSettings": {
+								"linkedServiceName": {
+									"referenceName": "AzureDataLakeStorage",
+									"type": "LinkedServiceReference"
+								}
+							},
+							"enableLogging": true,
 							"storeSettings": {
 								"type": "AzureBlobFSReadSettings",
 								"recursive": true,
@@ -251,7 +257,8 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/CDCHealhData')]",
-				"[concat(variables('factoryId'), '/datasets/DataLakeGen2')]"
+				"[concat(variables('factoryId'), '/datasets/DataLakeGen2')]",
+				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage')]"
 			]
 		},
 		{
